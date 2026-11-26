@@ -23,5 +23,5 @@ CREATE TABLE nozzles (
     id INT PRIMARY KEY,
     nozzle_number TEXT UNIQUE NOT NULL,
     tank_id INT REFERENCES tanks NOT NULL, 
-    current_meter_reading DECIMAL(12,2) NOT NULL CHECK (current_meter_reading >=0)
+    current_meter_reading DECIMAL(12,3) NOT NULL CHECK (current_meter_reading >=0)
 );
