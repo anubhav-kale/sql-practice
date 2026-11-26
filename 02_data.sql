@@ -1,15 +1,15 @@
 TRUNCATE TABLE nozzles, tanks, fuel_types;
 
-INSERT INTO fuel_types VALUES 
+INSERT INTO fuel_types(id, name, price_per_litre, code) VALUES 
 (1, 'PETROL', 111.49,'MS'),
 (2, 'DIESEL', 98.16,'HSD'),
 (3, 'POWER PETROL', 121.61,'PWR');
 
-INSERT INTO tanks VALUES
+INSERT INTO tanks(id,tank_name,fuel_type_id,max_capacity,amount) VALUES
 (1, 'PETROL TANK', 1, 15000, 4259),
 (2, 'DIESEL TANK', 2, 20000, 7853);
 
-INSERT INTO nozzles VALUES
+INSERT INTO nozzles(id, nozzle_number, tank_id, current_meter_reading) VALUES
 (1,'MS-1',1, 149171.630),
 (2,'MS-2',1,  241026.530 ),
 (3,'MS-3',1, 57729.235),
