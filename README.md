@@ -1,1 +1,1 @@
-Practicing SQL queries with PostgresSQL daily using Petrol Pump data model.
+Practicing SQL queries with PostgreSQL daily using Petrol Pump data model.
