@@ -1,4 +1,4 @@
-## 26/11/26
+## 26/11/26 2.30 hours
 
 Floating Point numbers are stored in binary format, some of the information is lost as some decimals like 0.1 cannot be represented in binary format. This is done for faster access but it costs in accuracy, so it is recommended to use DECIMAL/NUMERIC for exact decimals.
 for eg. SELECT 0.1::double precision + 0.2::double precision AS double_result;
@@ -32,7 +32,7 @@ Removes duplication when there is composite primary key.
 
 3NF (Third Normal Form)	- 2NF and every non-key attribute depends only on the primary ke, no transitive dependency.	
 Prevents update anomalies.
-for eg. having fuel type and tank in one table, a non primary key will be dependent on another non primary key for ex, tank capacity -> tank id which will be non primary key 
+for eg. having fuel type and tank in one table, a non primary key will be dependent on another non primary key for ex, tank id -> tank capacity which will be non primary key 
 BCNF (Boyce–Codd Normal Form) - 3NF and for every functional dependency X -> Y, X must be a superkey.
 Fixes edge cases in 3NF involving overlapping candidate keys.
 
@@ -46,3 +46,6 @@ Referential Integrity is rule for foreign keys such that it prevents orpaned rec
 
 Using a surrogate key as the primary key keeps foreign keys small and stable, so updates to business attributes don't ripple across child tables.We can still add UNIQUE constraint on a natural key to stop duplicates without making it the foreign key target
 
+## 27/11/26 1 hours
+
+CTE - Common table expression 
